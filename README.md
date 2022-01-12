@@ -46,15 +46,26 @@ You can apply texture reformer to any **interactive texture transfer** applicati
 
 **Specify inputs and outputs**
 
-- `-content` : File path to the content image, valid for style transfer and invalid for texture transfer
-- `-style` : File path to the style/source image
-- `-content_sem` : File path to the semantic map of content/target image
-- `-style_sem` : File path to the semantic map of style/source image
-- `-outf` : Folder to save output images
-- `-content_size` : Resize content/target
-- `-style_size` : Resize style/source
-- `-style_transfer` : Activate it if you want style transfer rather than texture transfer
+- `-content` : File path to the content image, valid for style transfer and invalid for texture transfer.
+- `-style` : File path to the style/source image.
+- `-content_sem` : File path to the semantic map of content/target image.
+- `-style_sem` : File path to the semantic map of style/source image.
+- `-outf` : Folder to save output images.
+- `-content_size` : Resize content/target.
+- `-style_size` : Resize style/source.
+- `-style_transfer` : Activate it if you want style transfer rather than texture transfer.
 
 **Runtime controls**
 
-- ``
+- `-coarse_alpha` : Hyperparameter to blend transformed feature with content feature in coarse level (level 5).
+- `-fine_alpha` : Hyperparameter to blend transformed feature with content feature in fine level (level 4).
+- `-semantic` : Choose different modes to embed semantic maps, choices = (`add`, `concat`, `concat_ds`). `add`: addition, `concat`: concatenation, `concat_ds`: concat downsampled semantic maps.
+- `-concat_weight` : Hyperparameter to control the semantic guidance/awareness weight for `-semantic concat` mode and `-semantic concat_ds` mode, range `0-inf`.
+- `-add_weight` : Hyperparameter to control the semantic guidance/awareness weight for `-semantic add` mode, range `0-1`.
+- `-coarse_psize` : Patch size in coarse level (level 5), `0` means using global view.
+- `-fine_psize` : Patch size in fine level (level 4).
+- `-enhance` : Choose different enhancement modes in level 3, level 2, and level 1, choices = (`adain`, `wct`). `adain`: first-order statistics enhancement, `wct`: second-order statistics enhancement.
+- `-enhance_alpha` : Hyperparameter to control the enhancement degree in level 3, level 2, and level 1.
+
+**Compress Models**
+- `-compress` : Use the compressed models for faster inference.
