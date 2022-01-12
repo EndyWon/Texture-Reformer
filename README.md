@@ -69,3 +69,21 @@ You can apply texture reformer to any **interactive texture transfer** applicati
 
 **Compress Models**
 - `-compress` : Use the compressed models for faster inference.
+
+
+## Citation:
+
+If you find this code useful for your research, please cite the paper:
+
+```
+@inproceedings{wang2022texture,
+  title={Texture Reformer: Towards Fast and Universal Interactive Texture Transfer},
+  author={Wang, Zhizhong and Zhao, Lei and Chen, Haibo and Li, Ailin and Zuo, Zhiwen and Xing, Wei and Lu, Dongming},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2022}
+}
+```
+
+## Acknowledgement:
+
+We refer to some codes from [Collaborative-Distillation](https://github.com/MingSun-Tse/Collaborative-Distillation) and [Pytorch_Style_Swap](https://github.com/irasin/Pytorch_Style_Swap). Great thanks to them!
