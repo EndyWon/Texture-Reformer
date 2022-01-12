@@ -16,4 +16,14 @@ You can apply texture reformer to any **interactive texture transfer** applicati
 - Pytorch 1.4.0 (strongly recommended!!!)
 - Other needed libraries are summarized in `requirements.txt`. Simply install them by `pip install -r requirements`
 
+## Getting Started:
+**Step 1: Clone this repo**
+
+`git clone https://github.com/EndyWon/Texture-Reformer`  
+`cd Texture-Reformer`
+
+**Step 2: Prepare models**
+
+- Download the pre-trained auto-encoder models from this [google drive]().
+
 
