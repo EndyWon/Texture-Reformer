@@ -59,7 +59,7 @@ You can apply texture reformer to any **interactive texture transfer** applicati
 
 - `-coarse_alpha` : Hyperparameter to blend transformed feature with content feature in coarse level (level 5).
 - `-fine_alpha` : Hyperparameter to blend transformed feature with content feature in fine level (level 4).
-- `-semantic` : Choose different modes to embed semantic maps, choices = (`add`, `concat`, `concat_ds`). `add`: addition, `concat`: concatenation, `concat_ds`: concat downsampled semantic maps.
+- `-semantic` : Choose different modes to embed semantic maps, choices = (`add`, `concat`, `concat_ds`). `add`: our addition, `concat`: our concatenation, `concat_ds`: concat downsampled semantic maps.
 - `-concat_weight` : Hyperparameter to control the semantic guidance/awareness weight for `-semantic concat` mode and `-semantic concat_ds` mode, range `0-inf`.
 - `-add_weight` : Hyperparameter to control the semantic guidance/awareness weight for `-semantic add` mode, range `0-1`.
 - `-coarse_psize` : Patch size in coarse level (level 5), `0` means using global view.
