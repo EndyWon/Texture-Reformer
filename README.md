@@ -1,7 +1,7 @@
 # Texture Reformer
 **[update 1/12/2022]**
 
-Official code for ["Texture Reformer: Towards Fast and Universal Interactive Texture Transfer"](https://arxiv.org/abs/2112.02788) (AAAI 2022)
+Official Pytorch code for ["Texture Reformer: Towards Fast and Universal Interactive Texture Transfer"](https://arxiv.org/abs/2112.02788) (AAAI 2022)
 
 ## Introduction:
 
