@@ -9,4 +9,6 @@ Official code for ["Texture Reformer: Towards Fast and Universal Interactive Tex
 
 You can apply texture reformer to any **interactive texture transfer** application scenarios, including doodles-to-artworks, texture pattern editing, text effects transfer, and virtual clothing manipulation. Moreover, we also extend it to [**semantic style transfer**](https://arxiv.org/pdf/1603.01768.pdf), which allows the users to provide an additional content image as input.
 
+![show](https://github.com/EndyWon/Texture-Reformer/blob/master/figures/teaser.jpg)
+
 
