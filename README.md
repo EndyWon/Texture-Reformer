@@ -24,6 +24,37 @@ You can apply texture reformer to any **interactive texture transfer** applicati
 
 **Step 2: Prepare models**
 
-- Download the pre-trained auto-encoder models from this [google drive]().
+- Download the pre-trained auto-encoder models from this [google drive](https://drive.google.com/file/d/13n_YJ6J8lIvF-liWFeJY35nXsZM-5vTZ/view?usp=sharing). Unzip and place them at path `models/`.
+- We also provide the **small** pre-trained models compressed by [Collaborative-Distillation](https://github.com/MingSun-Tse/Collaborative-Distillation) in this [google drive](https://drive.google.com/file/d/1RkDJs6Hv7FQ-vdw9B9qDzrzq8l79dABS/view?usp=sharing). Unzip and place them at path `small_models/`.
+
+**Step 3: Run transfer script**
+
+- For **interactive texture transfer**, you only need to input **three** images: the source image `-style`, the semantic map of source image `-style_sem`, and the semantic map of target image `-content_sem`, like follows:
+
+`python transfer.py -content_sem inputs/doodles/Seth_sem.png -style inputs/doodles/Gogh.jpg -style_sem inputs/doodles/Gogh_sem.png`
+
+![show](https://github.com/EndyWon/Texture-Reformer/blob/main/figures/texture_transfer.jpg)
+
+- For **semantic style transfer**, you need to first activate the style transfer mode by `-style_transfer`, and then input **four** images: the content image `-content`, the style image `-style`, the semantic map of content image `-content_sem` (not necessary), and the semantic map of style image `-style_sem` (not necessary), like follows:
+
+`python transfer.py -style_transfer -content inputs/doodles/Seth.jpg -content_sem inputs/doodles/Seth_sem.png -style inputs/doodles/Gogh.jpg -style_sem inputs/doodles/Gogh_sem.png -coarse_alpha 0.5 -fine_alpha 0.5`
+
+![show](https://github.com/EndyWon/Texture-Reformer/blob/main/figures/style_transfer.jpg)
 
 
+## Script Parameters:
+
+**Specify inputs and outputs**
+
+- `-content` : File path to the content image, valid for style transfer and invalid for texture transfer
+- `-style` : File path to the style/source image
+- `-content_sem` : File path to the semantic map of content/target image
+- `-style_sem` : File path to the semantic map of style/source image
+- `-outf` : Folder to save output images
+- `-content_size` : Resize content/target
+- `-style_size` : Resize style/source
+- `-style_transfer` : Activate it if you want style transfer rather than texture transfer
+
+**Runtime controls**
+
+- ``
