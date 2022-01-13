@@ -1,0 +1,5 @@
+# for texture transfer
+python transfer.py -content_sem inputs/doodles/Seth_sem.png -style inputs/doodles/Gogh.jpg -style_sem inputs/doodles/Gogh_sem.png
+
+# for style transfer
+python transfer.py -style_transfer -content inputs/doodles/Seth.jpg -content_sem inputs/doodles/Seth_sem.png -style inputs/doodles/Gogh.jpg -style_sem inputs/doodles/Gogh_sem.png -coarse_alpha 0.5 -fine_alpha 0.5
