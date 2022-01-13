@@ -1,1 +1,1 @@
-The output images are put in this folder.
+The output images will appear in this folder.
