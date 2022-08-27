@@ -13,7 +13,7 @@ You can apply texture reformer to any **interactive texture transfer** applicati
 
 ## Environment:
 - Python 3.6
-- Pytorch 1.4.0 (strongly recommended!!!)
+- Pytorch 1.4.0
 - Other needed libraries are summarized in `requirements.txt`. Simply install them by `pip install -r requirements`
 
 ## Getting Started:
