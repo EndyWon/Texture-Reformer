@@ -77,9 +77,12 @@ If you find this code useful for your research, please cite the paper:
 
 ```
 @inproceedings{wang2022texture,
-  title={Texture Reformer: Towards Fast and Universal Interactive Texture Transfer},
+  title={Texture reformer: towards fast and universal interactive texture transfer},
   author={Wang, Zhizhong and Zhao, Lei and Chen, Haibo and Li, Ailin and Zuo, Zhiwen and Xing, Wei and Lu, Dongming},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={36},
+  number={3},
+  pages={2624--2632},
   year={2022}
 }
 ```
